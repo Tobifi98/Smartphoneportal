@@ -1,0 +1,7 @@
+{
+  "name": "Smartphoneportal",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
