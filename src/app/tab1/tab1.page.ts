@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+[x: string]: DataSource<any>|Observable<any[]>|NgIterable<any>;
 
   constructor() {}
 
