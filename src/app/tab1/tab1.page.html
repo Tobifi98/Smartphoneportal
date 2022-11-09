@@ -1,8 +1,41 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-title>
+            Smartphoneportal
+          </ion-title>
+        </ion-col>
+        <!-- Searchbar -->
+        <ion-col>
+          <ion-searchbar show-clear-button="always"></ion-searchbar>
+        </ion-col>
+        <!-- Log in button -->
+        <ion-col class="ion-align-self-end">
+          <ion-button id="click-trigger">Log in</ion-button>
+          <!-- Log in form -->
+          <ion-popover trigger="click-trigger" triggerAction="click">
+            <ng-template>
+              <!-- Email input field -->
+              <ion-item>
+                <ion-label position="stacked">Email</ion-label>
+                <ion-input [clearInput]="true" placeholder="email@email.com"></ion-input>
+              </ion-item>
+              <!-- Passord field -->
+              <ion-item>
+                <ion-label position="stacked">Password</ion-label>
+                <ion-input type="password" placeholder="Password"></ion-input>
+              </ion-item>
+              <!-- transmit form -->
+              <ion-item style="width: 100%">
+                <ion-button id="click-trigger" style="width: 100%;">Go!</ion-button>
+              </ion-item>
+            </ng-template>
+          </ion-popover>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-header>
 
