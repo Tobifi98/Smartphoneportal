@@ -41,13 +41,6 @@
 
 <ion-content class = "ion-content-scroll-host" [fullscreen]="true" [srcollY = false]>
   <cdk-virtual-scroll-viewport>
-    <ion-list>
-      <ion-item *cdkVirtualFor="let item of items">
-        <ion-avatar slot="start">
-          <img src="https://loremflickr.com/40/40" />
-        </ion-avatar>
-        <ion-label> {{item }} </ion-label>
-      </ion-item>
-    </ion-list>
+    
   </cdk-virtual-scroll-viewport>
 </ion-content>
