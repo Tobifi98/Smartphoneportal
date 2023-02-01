@@ -7,6 +7,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { HeaderComponent } from '../header/header.component';
 
 
 @NgModule({
@@ -18,6 +19,6 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     Tab1PageRoutingModule,
     ScrollingModule
   ],
-  declarations: [Tab1Page]
+  declarations: [Tab1Page, HeaderComponent]
 })
 export class Tab1PageModule {}
