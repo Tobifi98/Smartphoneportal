@@ -1,3 +1,12 @@
 <app-header></app-header>
 
-<app-explore-container></app-explore-container>
+<app-explore-container>
+    <ion-content>
+        <cdk-virtual-scroll-viewport itemSize="" minBufferPx="" maxBufferPx="">
+            <ion-list>
+                <ion-item *cdkVirtualFor="let item of items">
+                </ion-item>
+            </ion-list>
+        </cdk-virtual-scroll-viewport>
+    </ion-content>
+</app-explore-container>
