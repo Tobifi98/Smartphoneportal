@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { itemPhone } from './item-phone/item-phone';
 
 @Component({
   selector: 'app-tab1',
@@ -6,9 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  //[x: string]: DataSource<any>|Observable<any[]>|NgIterable<any>;
 
-//[x: string]: DataSource<any>|Observable<any[]>|NgIterable<any>;
-
-  constructor() {} 
-
+  items: {item: itemPhone}[] = [];
+  constructor() {
+    //hier items-Array mit loop befüllen / initialisieren
+  } 
+  
 }
