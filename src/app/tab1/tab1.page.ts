@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { itemPhone } from './item-phone/item-phone';
+import { ItemPhoneComponent } from './item-phone/item-phone.component';
 
 @Component({
   selector: 'app-tab1',
@@ -9,7 +9,8 @@ import { itemPhone } from './item-phone/item-phone';
 export class Tab1Page {
   //[x: string]: DataSource<any>|Observable<any[]>|NgIterable<any>;
 
-  items: {item: itemPhone}[] = [];
+  
+  
   constructor() {
     //hier items-Array mit loop befüllen / initialisieren
   } 

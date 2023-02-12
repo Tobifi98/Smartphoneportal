@@ -8,6 +8,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { HeaderComponent } from '../header/header.component';
+import { ItemPhoneComponent } from './item-phone/item-phone.component';
 
 
 @NgModule({
@@ -19,6 +20,6 @@ import { HeaderComponent } from '../header/header.component';
     Tab1PageRoutingModule,
     ScrollingModule
   ],
-  declarations: [Tab1Page, HeaderComponent]
+  declarations: [Tab1Page, HeaderComponent, ItemPhoneComponent]
 })
 export class Tab1PageModule {}
